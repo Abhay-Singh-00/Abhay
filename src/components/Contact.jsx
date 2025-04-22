@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-100 to-blue-100 px-4 text-center">
+    <section id="contact" className="py-20 bg-gradient-to-br from-purple-100 to-blue-100 px-4 text-center">
       <h2 className="text-4xl font-bold text-gray-800 mb-10">Contact Me</h2>
       <motion.form
         onSubmit={sendEmail}

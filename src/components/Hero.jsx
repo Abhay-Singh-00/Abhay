@@ -27,7 +27,7 @@ export default function Hero() {
           View Projects
         </a>
         <a
-          href="mailto:2k22.cscys32245@gmail.com"
+          href="#contact"
           className="px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition-all"
         >
           Contact Me
