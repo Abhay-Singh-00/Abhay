@@ -5,9 +5,11 @@ import {
   FaNode,
   FaDatabase,
   FaBootstrap,
-  FaMobileAlt
+  FaMobileAlt,
+  FaHtml5,
+  FaCss3Alt
 } from 'react-icons/fa';
-import { SiSpringboot } from 'react-icons/si';
+import { SiSpringboot, SiTailwindcss } from 'react-icons/si';
 
 const skills = [
   { name: 'React.js', icon: <FaReact className="text-5xl text-indigo-600 mx-auto" /> },
@@ -17,6 +19,9 @@ const skills = [
   { name: 'Bootstrap', icon: <FaBootstrap className="text-5xl text-purple-600 mx-auto" /> },
   { name: 'React Native', icon: <FaMobileAlt className="text-5xl text-pink-500 mx-auto" /> },
   { name: 'Spring Boot', icon: <SiSpringboot className="text-5xl text-green-700 mx-auto" /> },
+  { name: 'HTML5', icon: <FaHtml5 className="text-5xl text-red-600 mx-auto" /> },
+  { name: 'CSS3', icon: <FaCss3Alt className="text-5xl text-blue-600 mx-auto" /> },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-5xl text-teal-500 mx-auto" /> },
 ];
 
 export default function Skills() {
