@@ -8,6 +8,7 @@ import LearningRoadmap from './components/LearningRoadmap';
 import Skills from './components/Skills'; // Import Skills component
 import Certificates from './components/Certificates';
 import Contact from './components/Contact';
+import CodingProfiles from './components/CodingProfiiles';
 
 function App() {
   const [activeComponent, setActiveComponent] = useState('skills');
@@ -62,6 +63,7 @@ function App() {
       </div>
 
       <Projects />
+      <CodingProfiles/>
       <Certificates/>
       <Contact/>
     </div>

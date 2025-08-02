@@ -1,7 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { useKeenSlider } from 'keen-slider/react';
-import 'keen-slider/keen-slider.min.css';
-import { motion } from 'framer-motion';
+import React from 'react';
 import { Code, Gamepad, Sparkles } from 'lucide-react';
 
 const categories = {
@@ -80,94 +77,27 @@ const categories = {
 };
 
 export default function Projects() {
-  const [showAll, setShowAll] = useState(false);
-
   return (
     <section id="projects" className="py-20 px-4 md:px-8 bg-gradient-to-br from-gray-900 to-black text-white w-screen">
       <h2 className="text-4xl font-bold mb-8 text-center text-cyan-400">
         🚀 My Creative Projects
       </h2>
 
-      <div className="text-center mb-16">
-        <button
-          onClick={() => setShowAll(prev => !prev)}
-          className="bg-cyan-600 hover:bg-cyan-500 text-white px-6 py-2 rounded-full font-semibold transition duration-300"
-        >
-          {showAll ? 'Hide All Projects' : 'Show All Projects'}
-        </button>
-      </div>
-
       <div className="grid gap-20">
         {Object.entries(categories).map(([name, { icon, color, projects }], i) => (
-          <SliderSection
-            key={i}
-            name={name}
-            icon={icon}
-            color={color}
-            projects={projects}
-            showAll={showAll}
-          />
+          <div key={i} className="mb-8">
+            <h3 className={`text-3xl font-semibold mb-8 bg-gradient-to-r ${color} text-transparent bg-clip-text`}>
+              {icon} {name}
+            </h3>
+            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {projects.map((proj, idx) => (
+                <ProjectCard key={idx} proj={proj} />
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </section>
-  );
-}
-
-function SliderSection({ name, icon, color, projects, showAll }) {
-  const sliderRef = useRef(null);
-  const [sliderInstanceRef, sliderInstance] = useKeenSlider({
-    vertical: true,
-    loop: true,
-    slides: { perView: 1, spacing: 0 },
-    created(s) {
-      sliderRef.current = s;
-    }
-  });
-
-  useEffect(() => {
-    if (!showAll) {
-      const interval = setInterval(() => {
-        sliderRef.current?.moveToIdx(sliderRef.current.track.details.rel + 1);
-      }, 4000);
-      return () => clearInterval(interval);
-    }
-  }, [showAll]);
-
-  if (showAll) {
-    return (
-      <div className="mb-8">
-        <h3 className={`text-3xl font-semibold mb-4 bg-gradient-to-r ${color} text-transparent bg-clip-text`}>
-          {icon} {name}
-        </h3>
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {projects.map((proj, idx) => (
-            <ProjectCard key={idx} proj={proj} />
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="mb-8">
-      <h3 className={`text-3xl font-semibold mb-4 bg-gradient-to-r ${color} text-transparent bg-clip-text`}>
-        {icon} {name}
-      </h3>
-      <div className="relative h-[360px] overflow-hidden rounded-2xl" ref={sliderInstanceRef}>
-        <div className="keen-slider h-full">
-          {projects.map((proj, idx) => (
-            <motion.div
-              key={idx}
-              className="keen-slider__slide h-full flex justify-center items-center"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-            >
-              <ProjectCard proj={proj} />
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </div>
   );
 }
 
