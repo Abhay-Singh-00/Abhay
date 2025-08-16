@@ -1,5 +1,5 @@
-import React from 'react';
-import { Code, Gamepad, Sparkles } from 'lucide-react';
+import React from "react";
+import { Code, Gamepad, Sparkles } from "lucide-react";
 
 const categories = {
   "Major Projects": {
@@ -9,28 +9,28 @@ const categories = {
       {
         title: "MovieMate",
         desc: "Movie discovery and recommendation app built using React.js.",
-        img: "https://imag.malavida.com/mvimgbig/download-fs/moviemate-28893-0.jpg",
-        link: "https://abhay-singh-00.github.io/MovieMate/"
+        img: "https://plus.unsplash.com/premium_photo-1661675440353-6a6019c95bc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW92aWV8ZW58MHx8MHx8fDA%3D",
+        link: "https://abhay-singh-00.github.io/MovieMate/",
       },
       {
-        title: "CarFinder Web App",
+        title: "CARPUR",
         desc: "Filter and wishlist cars by price, fuel type, and brand using React.",
-        img: "https://www.shutterstock.com/image-illustration/find-car-check-concept-symbol-600nw-2060424533.jpg",
-        link: "https://abhay-singh-00.github.io/car-finder/"
+        img: "https://plus.unsplash.com/premium_photo-1737522964914-47b0df35a690?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2FycHVyJTIwY2Fyc3xlbnwwfHwwfHx8MA%3D%3D",
+        link: "https://carpur.netlify.app",
       },
       {
         title: "WorkLog",
         desc: "Performance tracking & compensation system using Java + Spring Boot.",
-        img: "https://cdn0.iconfinder.com/data/icons/work-from-home-19/512/WorkLog-dailytimesheet-workcalendar-software-timemanagement-512.png",
-        link: "https://abhay-singh-00.github.io/WorkLog/"
+        img: "https://images.unsplash.com/photo-1509483730228-811e47696246?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29ya2xvZ3xlbnwwfHwwfHx8MA%3D%3D",
+        link: "https://abhay-singh-00.github.io/WorkLog/",
       },
       {
         title: "Portfolio Generator",
         desc: "Create a personalized portfolio with this portfolio generator.",
-        img: "https://www.visme.co/wp-content/uploads/2024/06/ai-marketing-plan-row-2.jpg",
-        link: "https://abhay-singh-00.github.io/Portfolio-Generator/"
-      }
-    ]
+        img: "https://images.unsplash.com/photo-1632882765546-1ee75f53becb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvJTIwZ2VuZXJhdG9yfGVufDB8fDB8fHww",
+        link: "https://abhay-singh-00.github.io/Portfolio-Generator/",
+      },
+    ],
   },
   "Utility Tools": {
     icon: <Code className="text-green-400 w-6 h-6 inline mr-2" />,
@@ -39,63 +39,72 @@ const categories = {
       {
         title: "Resume Generator",
         desc: "Create professional resumes using this resume builder.",
-        img: "https://images.sftcdn.net/images/t_app-icon-m/p/58522d06-4930-11e8-8349-02420a000b15/479763709/free-resume-builder-cv-maker-templates-pdf-formats-icon.png",
-        link: "https://abhay-rathore.github.io/Resume-Generator/"
+        img: "https://plus.unsplash.com/premium_photo-1725985758256-2b311864d1ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHJlc3VtZSUyMGdlbmVyYXRvcnxlbnwwfHwwfHx8MA%3D%3D",
+        link: "https://abhay-rathore.github.io/Resume-Generator/",
       },
       {
         title: "Digital Clock",
         desc: "Real-time digital clock using HTML, CSS, and JavaScript.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1pzmBNttKGDhnoa9dHNaRuPIumpRPaYmKOQ&s",
-        link: "https://abhay-rathore.github.io/Digital-Clock/"
+        img: "https://images.unsplash.com/photo-1591436123200-5ccc6511c0e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGlnaXRhbCUyMGNsb2NrfGVufDB8fDB8fHww",
+        link: "https://abhay-rathore.github.io/Digital-Clock/",
       },
       {
         title: "Age Calculator",
         desc: "Calculate age based on input date using JavaScript logic.",
-        img: "https://play-lh.googleusercontent.com/20EpPSOwFTiDv-ntlpR017NmHJsB1E5eGFIu9BMT_j7RC_IiHsJuuNq2V-8h6wM42d_a",
-        link: "https://abhay-rathore.github.io/Age-Calculator/"
-      }
-    ]
+        img: "https://images.unsplash.com/photo-1611946258523-9c2bfabb94e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFnZSUyMGNhbGN1bGF0b3J8ZW58MHx8MHx8fDA%3D",
+        link: "https://abhay-rathore.github.io/Age-Calculator/",
+      },
+    ],
   },
-  "Games": {
+  Games: {
     icon: <Gamepad className="text-purple-400 w-6 h-6 inline mr-2" />,
     color: "from-purple-500 to-purple-300",
     projects: [
       {
         title: "Tic Tac Toe",
         desc: "Classic game built using HTML, CSS, and JavaScript.",
-        img: "https://play-lh.googleusercontent.com/cF84m5Rr_pjRd594Gy7ShkKSIt7AJZBpx9A1Vk2rMKeN-FVUPA_nD7RJu1PKv9gBnw",
-        link: "https://abhay-rathore.github.io/Tic-Tac-Toe/"
+        img: "https://plus.unsplash.com/premium_photo-1673735396428-d51dc2a7a62d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGljJTIwdGFjJTIwdG9lfGVufDB8fDB8fHww",
+        link: "https://abhay-rathore.github.io/Tic-Tac-Toe/",
       },
       {
         title: "Guess the Number Game",
         desc: "A number guessing game built with JavaScript, HTML, and CSS.",
-        img: "https://i.ytimg.com/vi/JtMcVvX72wM/maxresdefault.jpg",
-        link: "https://abhay-rathore.github.io/Guess-the-Number-Game/"
-      }
-    ]
-  }
+        img: "https://images.unsplash.com/photo-1740062446976-94a8837e0dde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Vlc3MlMjB0aGUlMjBudW1iZXJ8ZW58MHx8MHx8fDA%3D",
+        link: "https://abhay-rathore.github.io/Guess-the-Number-Game/",
+      },
+    ],
+  },
 };
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-4 md:px-8 bg-gradient-to-br from-gray-900 to-black text-white w-screen">
+    <section
+      id="projects"
+      className="py-20 px-4 md:px-8 bg-gradient-to-br from-gray-900 to-black text-white"
+    >
       <h2 className="text-4xl font-bold mb-8 text-center text-cyan-400">
         🚀 My Creative Projects
       </h2>
 
       <div className="grid gap-20">
-        {Object.entries(categories).map(([name, { icon, color, projects }], i) => (
-          <div key={i} className="mb-8">
-            <h3 className={`text-3xl font-semibold mb-8 bg-gradient-to-r ${color} text-transparent bg-clip-text`}>
-              {icon} {name}
-            </h3>
-            <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-              {projects.map((proj, idx) => (
-                <ProjectCard key={idx} proj={proj} />
-              ))}
+        {Object.entries(categories).map(
+          ([name, { icon, color, projects }], i) => (
+            <div key={i} className="w-full mb-8">
+              <h3
+                className={`text-3xl font-semibold mb-8 bg-gradient-to-r ${color} text-transparent bg-clip-text`}
+              >
+                {icon} {name}
+              </h3>
+
+              {/* Responsive grid without scrollbars */}
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+                {projects.map((proj, idx) => (
+                  <ProjectCard key={idx} proj={proj} />
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        )}
       </div>
     </section>
   );
@@ -103,22 +112,37 @@ export default function Projects() {
 
 function ProjectCard({ proj }) {
   return (
-    <div className="max-w-xs w-full bg-white/10 border border-white/20 rounded-2xl overflow-hidden shadow-xl backdrop-blur-sm hover:shadow-2xl transition-all duration-300 mx-auto">
-      <img src={proj.img} alt={proj.title} className="w-full h-40 object-cover" loading="lazy" />
-      <div className="p-4 flex flex-col justify-between h-[calc(100%-160px)]">
-        <div>
-          <h4 className="text-lg font-semibold text-cyan-300">{proj.title}</h4>
-          <p className="text-sm text-gray-300 mt-1 line-clamp-3">{proj.desc}</p>
+    <div className="w-full perspective">
+      <div className="relative w-full h-64 transition-transform duration-700 transform-style-preserve-3d hover:[transform:rotateY(180deg)]">
+        {/* Front Side */}
+        <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-xl bg-white/10 border border-white/20 backdrop-blur-sm [backface-visibility:hidden]">
+          <img
+            src={proj.img}
+            alt={proj.title}
+            className="w-full h-50 object-cover"
+            loading="lazy"
+          />
+          <div className="p-4">
+            <h4 className="text-lg font-semibold text-cyan-300 text-center">
+              {proj.title}
+            </h4>
+          </div>
         </div>
-        <div className="flex-grow" />
-        <a
-          href={proj.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 text-yellow-300 hover:text-yellow-400 hover:underline hover:scale-105 transition-transform"
-        >
-          🔗 View Project
-        </a>
+
+        {/* Back Side */}
+        <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-gray-800 to-black text-white p-4 [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-between">
+          <div className="overflow-y-auto max-h-32">
+            <p className="text-md text-gray-300">{proj.desc}</p>
+          </div>
+          <a
+            href={proj.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 text-yellow-300 hover:text-yellow-400 hover:underline"
+          >
+            🔗 View Project
+          </a>
+        </div>
       </div>
     </div>
   );

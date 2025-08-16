@@ -13,3 +13,19 @@ button {
 button:hover {
   background-color: #6B46C1;
 }
+.perspective {
+  perspective: 1000px;
+}
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.slick-list {
+  overflow: hidden !important;  /* prevent scrollbars */
+}
+
+.slick-track {
+  display: flex !important;     /* aligns properly */
+}
+

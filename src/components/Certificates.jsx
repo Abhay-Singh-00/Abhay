@@ -95,36 +95,36 @@ const Certificates = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-100 text-center relative">
-      <h2 className="text-4xl font-semibold text-gray-800 mb-12">
-        My Certificates
-      </h2>
-      <div className="px-8">
-        <Slider {...settings}>
-          {certificates.map((cert, index) => (
-            <div key={index} className="px-4">
-              <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-left overflow-hidden">
-                <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={cert.imageUrl}
-                    alt={cert.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-4">
-                    <h3 className="text-lg font-semibold text-gray-800">
-                      {cert.title}
-                    </h3>
-                    <p className="text-sm text-gray-500">
-                      {cert.issuer} - {cert.date}
-                    </p>
-                  </div>
-                </a>
+   <section className="py-20 bg-gray-100 text-center relative overflow-hidden">
+  <h2 className="text-4xl font-semibold text-gray-800 mb-12">
+    My Certificates
+  </h2>
+  <div className="px-8 overflow-hidden">
+    <Slider {...settings}>
+      {certificates.map((cert, index) => (
+        <div key={index} className="px-4">
+          <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-left overflow-hidden">
+            <a href={cert.link} target="_blank" rel="noopener noreferrer">
+              <img
+                src={cert.imageUrl}
+                alt={cert.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {cert.title}
+                </h3>
+                <p className="text-sm text-gray-500">
+                  {cert.issuer} - {cert.date}
+                </p>
               </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </section>
+            </a>
+          </div>
+        </div>
+      ))}
+    </Slider>
+  </div>
+</section>
   );
 };
 
